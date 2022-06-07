@@ -1,0 +1,6 @@
+<div class="row" (window:scroll)="checkBoxes()">
+    <button class="btn btn-danger" (click)="doSomething()" >Test</button>
+    <div class="col-xs-10 card-list" >
+        <app-learning-card-list-item  *ngFor="let cardContent of cardsContent" [cardContent]="cardContent"  class="box"  ></app-learning-card-list-item>
+    </div>
+</div>
